@@ -121,8 +121,8 @@ public class ForegroundService extends Service {
                 return ServiceInfo.FOREGROUND_SERVICE_TYPE_CONNECTED_DEVICE;
             case "dataSync":
                 return ServiceInfo.FOREGROUND_SERVICE_TYPE_DATA_SYNC;
-            case "health":
-                return ServiceInfo.FOREGROUND_SERVICE_TYPE_HEALTH;
+            // case "health":
+            //     return ServiceInfo.FOREGROUND_SERVICE_TYPE_HEALTH;
             case "location":
                 return ServiceInfo.FOREGROUND_SERVICE_TYPE_LOCATION;
             case "mediaPlayback":
@@ -133,14 +133,14 @@ public class ForegroundService extends Service {
                 return ServiceInfo.FOREGROUND_SERVICE_TYPE_MICROPHONE;
             case "phoneCall":
                 return ServiceInfo.FOREGROUND_SERVICE_TYPE_PHONE_CALL;
-            case "remoteMessaging":
-                return ServiceInfo.FOREGROUND_SERVICE_TYPE_REMOTE_MESSAGING;
-            case "shortService":
-                return ServiceInfo.FOREGROUND_SERVICE_TYPE_SHORT_SERVICE;
-            case "specialUse":
-                return ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE;
-            case "systemExempted":
-                return ServiceInfo.FOREGROUND_SERVICE_TYPE_SYSTEM_EXEMPTED;
+            // case "remoteMessaging":
+            //     return ServiceInfo.FOREGROUND_SERVICE_TYPE_REMOTE_MESSAGING;
+            // case "shortService":
+            //     return ServiceInfo.FOREGROUND_SERVICE_TYPE_SHORT_SERVICE;
+            // case "specialUse":
+            //     return ServiceInfo.FOREGROUND_SERVICE_TYPE_SPECIAL_USE;
+            // case "systemExempted":
+            //     return ServiceInfo.FOREGROUND_SERVICE_TYPE_SYSTEM_EXEMPTED;
 
             default:
                 throw new IllegalArgumentException("Unknown foreground service type: " + customServiceType);
